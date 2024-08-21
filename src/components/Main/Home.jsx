@@ -27,14 +27,14 @@ const Home = () => {
 
                     <div className="d-flex justify-content-center">
                       <a
-                        href="portfolio"
+                        href="/portfolio"
                         className="btn btn-success btn-sm me-1"
                         target="_blank"
                       >
                         <i className="bi bi-arrow-up-right-circle-fill fs-5 me-1"></i>
                         <strong>View Portfolio</strong>
                       </a>
-                      <a href="resume" className="btn btn-danger btn-sm">
+                      <a href="/resume" className="btn btn-danger btn-sm">
                         <i className="bi bi-file-earmark-text-fill fs-5 me-1"></i>
                         <strong>View Resume</strong>
                       </a>
@@ -393,7 +393,7 @@ const Home = () => {
                   </p>
                   <div className="d-flex justify-content-center align-items-center">
                     <a
-                      href="blog"
+                      href="/blog"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm"
