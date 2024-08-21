@@ -7,7 +7,7 @@ import Home from './components/Main/Home';
 import Resume from './components/Main/Resume';
 import Portfolio from './components/Main/Portfolio';
 import Lets_connect from './components/Main/lets_connect';
-import './App.css'; // Import the CSS file with transition styles
+import './app.css'; // Import the CSS file with transition styles
 
 const AppContent = () => {
   const location = useLocation();
