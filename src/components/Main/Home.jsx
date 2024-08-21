@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import { assets } from "../../assets/assets";
 import "devicon/devicon.min.css";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
