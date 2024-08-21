@@ -1,0 +1,46 @@
+/* App.css */
+
+.page-transition-left-enter {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .page-transition-left-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .page-transition-left-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .page-transition-left-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .page-transition-right-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .page-transition-right-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .page-transition-right-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .page-transition-right-exit-active {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  

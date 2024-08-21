@@ -1,0 +1,144 @@
+/* General Styles */
+.custom-navigation-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Sidebar Styles for Desktop */
+.custom-sidebar {
+    width: 70px !important;
+    height: 100% !important;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-sidebar ul.custom-side-nav {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.custom-sidebar ul.custom-side-nav li.custom-side-nav-item {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.custom-sidebar ul.custom-side-nav li.custom-side-nav-item a.custom-side-nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Tooltip Styles */
+.custom-sidebar ul.custom-side-nav li.custom-side-nav-item[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Bottom Bar Styles for Mobile */
+@media screen and (max-width: 768px) {
+    .custom-sidebar {
+        width: 100% !important;
+        height: 60px !important;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        background-color: #343a40;
+        z-index: 1000; /* Ensures the bottom bar stays above the content */
+    }
+
+    .custom-sidebar ul.custom-side-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60%; /* Keeping this as you preferred */
+    }
+
+    .custom-sidebar ul.custom-side-nav li.custom-side-nav-item {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom-sidebar ul.custom-side-nav li.custom-side-nav-item[data-tooltip]::after {
+        display: none;
+    }
+}
+
+/* Content Page Styles */
+.custom-content-page {
+    padding-bottom: 70px; /* Adds space for the bottom bar */
+}
+
+.content-page {
+    margin-left: 60px; /* Leave space for the sidebar on desktop */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .content-page {
+        margin-left: 0px; /* Remove left margin on mobile */
+        padding-bottom: 80px; /* Add padding at the bottom to avoid overlap with the bottom bar */
+    }
+}
+
+/* General Hover Styles */
+.custom-sidebar ul.custom-side-nav li.custom-side-nav-item a.custom-side-nav-link:hover {
+    color: #007bff; /* Example color change on hover */
+}
+
+/* Active Hover Effect for Desktop */
+.custom-sidebar ul.custom-side-nav li.custom-side-nav-item.active a.custom-side-nav-link {
+    background-color: #495057;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect as Page Change Indicator for Mobile */
+@media screen and (max-width: 768px) {
+    /* Adjusting the active state for mobile */
+    .custom-sidebar ul.custom-side-nav li.custom-side-nav-item.active a.custom-side-nav-link {
+        background-color: #495057;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+}
