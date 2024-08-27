@@ -60,6 +60,16 @@ const Portfolio = () => {
         image: assets.p_5,
         type: "web",
       },
+      {
+        title: "Dental Care",
+        description: "This dental care project was created during my internship.",
+        role: "React-JS Developer",
+        technologies: "React.js | Bootstrap 5 | Google Map API",
+        client: "Personal Project",
+        link: "https://denticarehub.vercel.app/",
+        image: "https://imgur.com/a/8eaNGPM",
+        type: "web",
+      },
     ];
 
     setCards(cardData);
