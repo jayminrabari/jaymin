@@ -67,7 +67,7 @@ const Portfolio = () => {
         technologies: "React.js | Bootstrap 5 | Google Map API",
         client: "Personal Project",
         link: "https://denticarehub.vercel.app/",
-        image: "https://imgur.com/a/8eaNGPM",
+        image: "https://i.imgur.com/Diq9MiY.png",
         type: "web",
       },
     ];
