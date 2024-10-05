@@ -70,6 +70,16 @@ const Portfolio = () => {
         image: "https://i.imgur.com/Diq9MiY.png",
         type: "web",
       },
+      {
+        title: "Book Rental System",
+        description: "It's simple book rental system - mini app",
+        role: "MERN Stack Developer",
+        technologies: "MERN",
+        client: "Personal Project",
+        link: "https://brs-z72z.vercel.app",
+        image: assets.p_6,
+        type: "web",
+      },
     ];
 
     setCards(cardData);
