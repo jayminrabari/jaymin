@@ -80,6 +80,16 @@ const Portfolio = () => {
         image: assets.p_6,
         type: "web",
       },
+      {
+        title: "Billing CRUD",
+        description: "CRUD Operation for simple billing - mini app",
+        role: "PHP Developer",
+        technologies: "PHP | Js | Bootstrap ",
+        client: "Personal Project",
+        link: "#",
+        image: "#",
+        type: "web",
+      },
     ];
 
     setCards(cardData);
